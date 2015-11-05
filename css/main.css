@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+body {
+	background-color: #2b303b;
+	color: #eff1f5;
+	font-family: "Roboto";
+	font-size: 11pt;
+	line-height: 21px;
+}
+.head {
+	font-family: "Roboto Condensed";
+	font-size: 16pt;
+	font-weight: 300;
+}
+strong {
+	font-weight: 700;
+}
+em {
+	font-style: italic;
+}
+u {
+	text-decoration: underline;
+}
+strike {
+	text-decoration: line-through;
+}
+
+p {
+	margin-bottom: 16px;
+}
+
+.wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100% - 16px);
+	height: calc(100% - 16px);
+	padding: 8px;
+}
+.section {
+	height: calc(50% - 8px);
+	margin-bottom: 8px;
+}
+
+.output {
+	padding: 8px;
+	border: 1px solid #000;
+	overflow-y: auto;
+}
+
+.input textarea {
+	width: 100%;
+	font-family: "Roboto Mono";
+	border: 1px solid #65737e;
+	outline: none;
+	-webkit-appearance: none;
+	background-color: #343d46;
+	color: #c0c5ce;
+	padding: 8px;
+}
+textarea:focus {
+	border: 1px solid #eff1f5;
+	outline: none;
+	color: #dfe1e8;
+}
+
+.input {
+	margin-bottom: 0;
+}
+
+.tools {
+	background-color: #343d46;
+	padding: 4px;
+}
+.tools select {
+	border: none;
+	outline: none;
+	background-color: #343d46;
+	color: #c0c5ce;
+}
+
+@media print {
+	body {
+		color: #000;
+		background-color: #fff;
+	}
+	.wrapper {
+		min-width: 8.5in;
+		max-width: 8.5in;
+		padding: 0;
+		height: auto;
+	}
+	.output {
+		min-width: 8.5in;
+		max-width: 8.5in;
+		min-height: 100%;
+		background-color: #fff;
+		position: absolute;
+		overflow-y: visible;
+		top: 0;
+		left: 0;
+		margin: 0 !important;
+		padding: 0 !important;
+		border: 0 !important;
+	}
+}
